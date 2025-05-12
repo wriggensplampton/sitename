@@ -1,0 +1,345 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+
+
+<meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    
+    <style>
+    body {
+      background-image: url('./resources/backgrounds/reddd.jpeg');
+  
+      background-attachment: fixed;
+      
+
+    }
+
+    </style>
+
+<link rel="stylesheet" href="./resources/progresources/globalcss.css">
+
+
+</head>
+
+
+
+
+  
+<body>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<div class="headstyle">
+
+
+
+    <header>
+      <div>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+       <a href="music.html">music</a>
+       <a href="drawings.html">art</a>
+       <a href="blog.html">blog</a> 
+       <a href="projects.html">projects</a> 
+       <a href="wikifun.html">wikifun!</a>
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+       <a href="dogshit.html">dogshit</a>
+
+
+
+
+
+  
+
+       <!-- <a href="#bottomm">To bottom</a> -->
+
+
+
+
+    autoplay enabled:
+    <input type="checkbox" id="autoplay" name="autoplayy" value="autoplayyy" onchange="toggleaudio()">
+
+      </div>
+
+    </header>
+  </div>
+
+
+
+
+
+
+   
+
+
+  <audio id="bgm" loop>
+    <source src="./resources/audio/Waltzing Flutes (Remastered) 4.mp3" type="audio/mpeg">
+</audio>
+
+
+  <audio id="postmusicclick">
+    <source src="./resources/onclickaudio/cough4.wav" type="audio/mpeg">
+  </audio>
+  
+
+  <br><br>
+
+    <div class="parentbox">
+
+      <button id="a4" onclick="displayart(4)">current art</button>
+      <button id="a3" onclick="displayart(3)">later college art</button>
+      <button id="a2" onclick="displayart(2)">mid college art</button>
+      <button id="a1" onclick="displayart(1)">early college art</button>
+      <button id="a0" onclick="displayart(0)">highschool art</button>
+      
+    
+
+    </div>
+
+   
+    <br><br><br><br><br><br><br>
+
+  <div id="currentart">
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+      <br><br> <br><br> <br><br> <br><br>
+
+      
+
+
+     <!-- <button id="button_A">Press me</button> --> 
+<!--<h3 id="heading_A"></h3> -->
+
+
+
+
+
+
+
+<footer>
+
+    <br><br>
+    <div class="parentboxcenter">
+
+
+
+
+
+
+    <a href="#top" class="childtextboxpadded">Back to top</a>
+
+
+    <script src="https://iframe.chat/scripts/main.min.js"></script>
+
+<link rel="stylesheet" href="https://ultrakill.nekoweb.org/onionring.css">
+
+<script src="./resources/progresources/js/script.js"></script>  
+<script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+
+
+          displayart(4);
+
+
+          
+
+
+
+          
+          
+          checkboxx();
+
+
+            let audio = document.getElementById("bgm");
+
+            if (document.referrer.includes("google.")) {
+    console.log("User came from Google!");
+}
+
+
+
+
+const params = new URLSearchParams(window.location.search);
+const source = params.get("source");
+
+if (source) {
+  console.log("hey you used parameters!")
+  console.log(source)
+}
+
+
+
+            setTimeout(() => {
+              var value = localStorage.getItem('enablemusic');
+               console.log("MUSIC ENABLE VALUE:")
+
+              console.log(value)
+              if(value==1){
+
+
+                audio.play().catch(error => console.log("Autoplay blocked:", error));
+              }
+
+            }, 1500); // Delay autoplay
+    
+    
+        
+            
+        });
+        document.body.addEventListener("click", playAudio);
+        document.body.addEventListener("mouseover", playAudio);
+        function playAudio() {
+           
+    
+           
+    
+            // Remove event listeners after first interaction to prevent multiple triggers
+          
+            let musicenabled=1;
+    
+            
+            
+            if(!(document.getElementById("bgm")==null)){
+    
+            document.body.click();
+            //console.log("MOUSED!");
+            let audio = document.getElementById("bgm");
+
+             var value = localStorage.getItem('enablemusic');
+               console.log("MUSIC ENABLE VALUE:")
+
+              console.log(value)
+              if(value==1){
+
+            audio.play().catch(error => console.log("Autoplay blocked:", error));
+              }
+
+
+            if (audio.paused == false) {
+              
+              document.body.removeEventListener('mouseover', playAudio);
+              console.log("eventlistener removed :(");
+              let audio = document.getElementById("postmusicclick");
+
+              if(value==1){
+              audio.play().catch(error => console.log("Autoplay blocked:", error));
+              }
+              
+            }
+
+
+            }else{
+
+              let audio = document.getElementById("postmusicclick");
+
+              
+              
+              audio.play().catch(error => console.log("Autoplay blocked:", error));
+              
+    
+                console.log("post music click");
+
+              
+
+             
+            }
+    
+    
+    
+    
+        }
+    
+
+        chattable.initialize({
+        theme : "Tendo"
+      });
+
+      generateheader();
+</script>
+
+</div>
+
+    <a id="bottomm"></a>
+
+
+    </footer>
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
